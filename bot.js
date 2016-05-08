@@ -37,7 +37,7 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/13soe3.jpg");
+    postMessage("https://i.imgflip.com/13spo3.jpg");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
