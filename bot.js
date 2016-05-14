@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexPicks = /^\/draftpicks/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexAss = /^\/ass/; 
@@ -25,7 +25,15 @@ function respond() {
     this.res.end();
   } 
   
-  else if(request.text && botRegexAss.test(request.text)) {
+  } 
+  else if(request.text && botRegexPicks.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgflip.com/144jaa.jpg");
+    this.res.end();
+    }
+  
+    }
+    else if(request.text && botRegexAss.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/bf/de/aa/bfdeaa758de10f072925051a0770ed1c.jpg");
     this.res.end();
