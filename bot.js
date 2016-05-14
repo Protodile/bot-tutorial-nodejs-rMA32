@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexPicks = /^\/draftpicks/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexAss = /^\/ass/; 
@@ -29,9 +29,14 @@ function respond() {
     postMessage("https://i.imgflip.com/144jaa.jpg");
     this.res.end();
   }
-   else if(request.text && botRegexPlay.test(request.text)) {
+  else if(request.text && botRegexPicks.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/144qt7.jpg");
+    postMessage("https://i.imgflip.com/144jaa.jpg");
+    this.res.end();
+  }
+   else if(request.text && botRegexCheese.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://images-na.ssl-images-amazon.com/images/I/51kH1qfcU4L._SX258_BO1,204,203,200_.jpg");
     this.res.end();
   }
   else if(request.text && botRegexAss.test(request.text)) {
