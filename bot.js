@@ -29,9 +29,9 @@ function respond() {
     postMessage("https://i.imgflip.com/144jaa.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexPicks.test(request.text)) {
+  else if(request.text && botRegexPlay.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/144jaa.jpg");
+    postMessage("https://i.imgflip.com/145iuh.jpg");
     this.res.end();
   }
    else if(request.text && botRegexCheese.test(request.text)) {
