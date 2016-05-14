@@ -24,16 +24,12 @@ function respond() {
     postMessage("http://daddyleagues.com/mcfslv2/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
-  
-  } 
   else if(request.text && botRegexPicks.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgflip.com/144jaa.jpg");
     this.res.end();
   }
-  
-  }
-    else if(request.text && botRegexAss.test(request.text)) {
+  else if(request.text && botRegexAss.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/bf/de/aa/bfdeaa758de10f072925051a0770ed1c.jpg");
     this.res.end();
