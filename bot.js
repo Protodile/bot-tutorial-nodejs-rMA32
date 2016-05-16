@@ -8,9 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexCommish = /^\/watching/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexAss = /^\/ass/; 
-      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
-      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
+      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/; 
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -127,14 +125,9 @@ function respond() {
     postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
     this.res.end();
   }
-  else if(request.text && botRegexSiege.test(request.text)) {
+  else if(request.text && botRegexDEN.test(request.text)) {
     this.res.writeHead(200);
-    if(0.6 >= Math.random() > 0.3)
-      postMessage(siege1);
-    else if(Math.random() >0.6)
-      postMessage(siege3)
-    else
-      postMessage(siege2);
+    postMessage("https://cdn.meme.am/instances/500x/68399474.jpg")
     this.res.end();
   }
   
