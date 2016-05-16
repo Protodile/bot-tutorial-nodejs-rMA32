@@ -138,6 +138,7 @@ function respond() {
   else if(request.text && botRegexTY.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media2.giphy.com/gpP18dtmlplle/giphy.gif")
+    this.res.end();
   }
   
   else {
