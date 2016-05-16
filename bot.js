@@ -137,7 +137,7 @@ function respond() {
   }
   else if(request.text && botRegexTY.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://vignette1.wikia.nocookie.net/glee/images/f/f7/Youre-welcome_zps3737cc66.gif/revision/latest?cb=20140421214638")
+    postMessage("https://m.popkey.co/964d03/g3KvO.gif")
     this.res.end();
   }
   
