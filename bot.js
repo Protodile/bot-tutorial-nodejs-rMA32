@@ -137,7 +137,7 @@ function respond() {
   }
   else if(request.text && botRegexTY.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media2.giphy.com/gpP18dtmlplle/giphy.gif")
+    postMessage("https://media.gq.com/photos/5643734c3cc8fcfe0e1a05e3/master/w_640/Gbxx90A.gif")
     this.res.end();
   }
   
