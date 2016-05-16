@@ -5,10 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexCommish = /^\/watching/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexPassRush = /^\/passrush/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/; 
+      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeeblo/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -22,9 +22,9 @@ function respond() {
     postMessage("http://daddyleagues.com/mcfslv2/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   }
-  else if(request.text && botRegexCommish.test(request.text)) {
+  else if(request.text && botRegexPassRush.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://gifb.in/idRV");
+    postMessage("https://media.giphy.com/media/XrDT8BuYB312/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexRage.test(request.text)) {
@@ -129,6 +129,10 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://cdn.meme.am/instances/500x/68399474.jpg")
     this.res.end();
+  }
+  else if(request.text && botRegexTY.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media2.giphy.com/gpP18dtmlplle/giphy.gif")
   }
   
   else {
