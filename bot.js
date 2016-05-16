@@ -137,7 +137,7 @@ function respond() {
   }
   else if(request.text && botRegexTY.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.gq.com/photos/5643734c3cc8fcfe0e1a05e3/master/w_640/Gbxx90A.gif")
+    postMessage("http://66.media.tumblr.com/85024b45a75e46c18e86065abca23be3/tumblr_n8s6ooGcKl1qj3996o1_250.gif")
     this.res.end();
   }
   
