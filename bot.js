@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexCommish = /^\/watching/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexCommish = /^\/watching/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexAss = /^\/ass/; 
@@ -27,6 +27,11 @@ function respond() {
   else if(request.text && botRegexCommish.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://gifb.in/idRV");
+    this.res.end();
+  }
+  else if(request.text && botRegexLaugh.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://reactiongifs.me/laughing-against-the-world/")
     this.res.end();
   }
   else if(request.text && botRegexPicks.test(request.text)) {
