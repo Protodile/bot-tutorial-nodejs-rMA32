@@ -142,7 +142,7 @@ function respond() {
   }
   else if(request.text && botRegexBoot.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://images.footlocker.com/pi/410061/zoom/timberland-6-premium-waterproof-boots-mens")
+    postMessage("http://mfi-miami.com/wp-content/uploads/2015/01/monopoly-guy-getting-booted.png")
     this.res.end();
   }
   else {
