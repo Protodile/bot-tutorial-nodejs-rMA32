@@ -144,6 +144,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://images.footlocker.com/pi/410061/zoom/timberland-6-premium-waterproof-boots-mens")
     this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
