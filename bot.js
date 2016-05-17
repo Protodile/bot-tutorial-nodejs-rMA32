@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexPassRush = /^\/passrush/;botRegexYes = /^\/yes/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexFuck = /^\/fuckthis/;botRegexYes = /^\/yes/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/titansplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeeblo/;botRegexBoot = /^\/boot/;
@@ -22,9 +22,9 @@ function respond() {
     postMessage("http://daddyleagues.com/mcfslv2/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   }
-  else if(request.text && botRegexPassRush.test(request.text)) {
+  else if(request.text && botRegexFuck.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/XrDT8BuYB312/giphy.gif");
+    postMessage("https://media0.giphy.com/media/Pch8FiF08bc1G/200w.gif");
     this.res.end();
   }
   else if(request.text &&botRegexYes.test(request.text)) {
