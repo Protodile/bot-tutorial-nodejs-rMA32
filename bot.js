@@ -29,7 +29,7 @@ function respond() {
   }
   else if(request.text && botRegexPop.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com'agJIP.gif")
+    postMessage("http://i.imgur.com/agJIP.gif")
     this.res.end();
   }
   else if(request.text &&botRegexYes.test(request.text)) {
