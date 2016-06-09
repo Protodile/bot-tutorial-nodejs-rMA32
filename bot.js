@@ -42,11 +42,6 @@ function respond() {
     postMessage("http://www.gifbin.com/bin/20048442yu.gif");
     this.res.end();
   }
-    else if(request.text && botRegexRage.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://cdn.meme.am/instances/500x/68399348.jpg")
-    this.res.end();
-  }
   else if(request.text && botRegexLaugh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://reactiongifs.me/laughing-against-the-world/")
