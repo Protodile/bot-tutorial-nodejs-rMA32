@@ -157,7 +157,7 @@ function respond() {
   }
   else if(request.text && botRegexK.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/4LYnyn.gif")
+    postMessage("https://i.imgur.com/4LYny7n.gif")
     this.res.end();
   }
    else if(request.text && botRegexOh.test(request.text)) {
