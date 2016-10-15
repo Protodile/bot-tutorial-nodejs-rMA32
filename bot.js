@@ -8,7 +8,7 @@ function respond() {
       botRegexAyy = /^\/ayyy/;  botRegexDL = /^\/DDL/i;botRegexFuck = /^\/fuckthis/; botRegexRant = /^\/rant/; botRegexPop = /^\/popcorn/;botRegexYes = /^\/yes/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/bengalsplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botRegexELI5 = /^\/eli5/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeelbo/;botRegexBoot = /^\/boot/;botRegexHeh = /^\/don'tmindme/;botRegexK = /^\/k/;botRegexOh = /^\/oh!/;
+      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeevlo/;botRegexBoot = /^\/boot/;botRegexHeh = /^\/don'tmindme/;botRegexK = /^\/k/;botRegexOh = /^\/oh!/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
