@@ -79,7 +79,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.daddyleagues.com/Mcfslv2/rules");
+    postMessage("https://docs.google.com/document/d/1Ya0eDAzBN-LkipKT0KOSFfsVTyBfMNpvovU2Nl4T9U4/edit?usp=drive_web");
     this.res.end();
   } 
   else if(request.text && botRegexPB.test(request.text)) {
