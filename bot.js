@@ -8,7 +8,7 @@ function respond() {
       botRegexAyy = /^\/ayyy/;  botRegexDL = /^\/DDL/i;botRegexFuck = /^\/fuckthis/; botRegexRant = /^\/rant/; botRegexPop = /^\/popcorn/;botRegexYes = /^\/yes/;botRegexRage = /^\/raging/;botRegexLaugh = /^\/lol/;botRegexPicks = /^\/draftpicks/;botRegexCheese = /^\/bengalsplaybook/;botRegexPlay = /^\/playgames/;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexPB = /^\/pablo/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botRegexELI5 = /^\/eli5/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexDamn = /^\/damnright/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeevlo/;botRegexBoot = /^\/boot/;botRegexHeh = /^\/don'tmindme/;botRegexK = /^\/k/;botRegexOh = /^\/oh!/;
+      botRegexDEN = /^\/excuses/; botRegexAss = /^\/ass/;botRegexTY = /^\/typeevlo/;botRegexBoot = /^\/boot/;botRegexHeh = /^\/don'tmindme/;botRegexK = /^\/k/;botRegexOh = /^\/oh!/;botRegexGG = /^\/gg/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -165,6 +165,10 @@ function respond() {
     postMessage("http://gph.is/1NOMJAr")
     this.res.end();
   }
+   else if(request.text && botRegexGG.test(request.text)) {
+     this.res.writeHead(200);
+     postMessage("http://i1.kym-cdn.com/photos/images/original/000/802/696/6c6.jpg")
+     this.res.end();
   else {
     console.log("don't care");
     this.res.writeHead(200);
