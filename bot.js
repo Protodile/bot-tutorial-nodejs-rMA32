@@ -16,11 +16,6 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://imgur.com/0YFbUAu");
     this.res.end();
-  } 
-  else if(request.text && botRegexWtf.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/XHBa71T.jpg");
-    this.res.end();
   }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
@@ -104,7 +99,6 @@ function respond() {
     postMessage("http://daddyleagues.com/mcfslv2/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
-
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
@@ -174,6 +168,11 @@ function respond() {
      this.res.writeHead(200);
      postMessage("http://i1.kym-cdn.com/photos/images/original/000/802/696/6c6.jpg")
      this.res.end();
+  } 
+   else if(request.text && botRegexWtf.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/XHBa71T.jpg");
+    this.res.end();
   else {
     console.log("don't care");
     this.res.writeHead(200);
