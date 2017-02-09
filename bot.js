@@ -74,12 +74,12 @@ function respond() {
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/13spo3.jpg");
+    postMessage("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiyh4f_5oPSAhVE5CYKHX7jCHoQjRwIBw&url=http%3A%2F%2Fknowyourmeme.com%2Fphotos%2F825417-madden-giferator&psig=AFQjCNHWYW53lvYqbQjUAUWMxsJy4GQSwg&ust=1486756830044081");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1Ya0eDAzBN-LkipKT0KOSFfsVTyBfMNpvovU2Nl4T9U4/edit?usp=drive_web");
+    postMessage("http://lowtuned.tumblr.com/post/156998148097/blitz-madden-league-rules");
     this.res.end();
   } 
   else if(request.text && botRegexPB.test(request.text)) {
